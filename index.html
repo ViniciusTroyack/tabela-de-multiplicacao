@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Multiplication Table</h1>
+        <script>
+            //Tabela 10x10.
+             let x = [];
+               
+             for (let i = 0; i <= 10; i++) {
+                 x[i] = [];
+                 for(let j = 0; j <= 10; j++){
+                    x[i][j] = i * j;
+                 }
+             }    
+
+             console.table(x);
+
+             //Bonus
+             //Tabela NxN
+
+             function tabelaBonus(n){
+                let x = [];
+
+                for (let i = 0; i <= n; i++) {
+                 x[i] = [];
+                 for(let j = 0; j <= n; j++){
+                    x[i][j] = i * j;
+                    }
+                }
+                return console.table(x);
+            }
+ 
+            
+        </script>
+    </body>
+ </html>
